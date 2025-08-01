@@ -10,7 +10,7 @@ function Contact() {
             </div>
 
             <div class="contact-card">
-            <form class = "contact-form col-md-6 col-sm-12  needs-validation"  id = "contact-form" action="https://formsubmit.co/emmanuel.lucio.urbina@gmail.com" method="POST" novalidate>
+            <form class = "contact-form col-md-6 col-sm-12  needs-validation"  id = "contact-form" action="https://formsubmit.co/6f1b727d2b6f27d46f51525f0f79bd8e " method="POST" novalidate>
                 <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="name" required>
