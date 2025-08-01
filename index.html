@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubre cómo un desarrollador web puede transformar tu idea en un sitio atractivo y funcional. ¡Impulsa tu presencia en línea hoy mismo!">
+    <title>Emmanuel | Desarrollo Web</title>
+    <link rel="canonical" href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+            background-color: #fff;
+            color: #343a40;
+        }
+
+
+
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: #fff;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .contact-card {
+            background-color: #f3f3f3;
+            padding: 30px 50px;
+            border-radius: 45px;
+        }
+
+        .card__service {
+            max-width: 600px;
+            max-height: 310px;
+            border-radius: 45px;
+            border: solid 1px #000;
+            padding: 50px;
+            border-bottom: 5px solid #000;
+            display: flex;
+
+
+
+        }
+
+        .card__service--image {
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .development {
+            background-color: #f3f3f3;
+        }
+
+        .web-design {
+            background-color: #B9FF66;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .contact-btn {
+            background-color: #000;
+            color: white;
+        }
+
+        .contact-btn:hover {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #000;
+
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .nav-item a {
+            font-size: 20px;
+        }
+
+        .services__tag {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+
+        }
+
+        .services__tag--label,
+        .card__service--label {
+            background-color: #B9FF66;
+            padding: 8px;
+        }
+
+        .web-design .card__service--label {
+            background-color: #fff;
+        }
+
+        .services__tag p {
+            margin: 0;
+
+        }
+
+        @media screen and (max-width: 912px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .card__service {
+                max-width: 100%;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .card__service--image {
+                justify-content: center;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body id="app">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./app/index.js"></script>
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
